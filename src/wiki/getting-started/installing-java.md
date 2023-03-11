@@ -80,25 +80,25 @@ sudo dnf install java-1.8.0-openjdk java-17-openjdk
 ### Void Linux
 
 ```bash
-sudo xbps-install openjdk17 openjdk8
+sudo xbps-install openjdk17-jre openjdk8-jre
 ```
 
 ### Arch Linux, Manjaro, EndeavorOS, Garuda
 
 ```bash
-sudo pacman -S jdk17-openjdk jdk8-openjdk
+sudo pacman -S jre17-openjdk jre8-openjdk
 ```
 
 ### Ubuntu, Pop!\_OS, Linux Mint, Zorin OS, or elementaryOS
 
 ```bash
-sudo apt install openjdk-17-jdk openjdk-8-jdk
+sudo apt install openjdk-17-jre openjdk-8-jre
 ```
 
 ### Debian, MX Linux
 
 ```bash
-sudo apt install openjdk-17-jdk
+sudo apt install openjdk-17-jre
 ```
 
 Java 8 is not available in Debian 10+ due to lack of security support, but you can use the Adoptium repository for security support until 2026:
@@ -106,13 +106,13 @@ Java 8 is not available in Debian 10+ due to lack of security support, but you c
 ```bash
 wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | sudo apt-key add -
 sudo add-apt-repository --yes https://packages.adoptium.net/artifactory/deb/
-sudo apt-get update && sudo apt-get install temurin-8-jdk
+sudo apt-get update && sudo apt-get install temurin-8-jre
 ```
 
 ### Alpine Linux
 
 ```bash
-sudo apk add openjdk17 openjdk8
+sudo apk add openjdk17-jre openjdk8-jre
 ```
 
 ### Flatpak
